@@ -22,7 +22,6 @@ const App = () => {
       </p>
       <p>
         <Total exercises1={exercises1 + exercises2 +exercises3 }/> 
-        {/* Number of exercises {exercises1 + exercises2 + exercises3} */}
         </p>
      
 
