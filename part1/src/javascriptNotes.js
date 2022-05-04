@@ -47,5 +47,51 @@ console.log(first, second)  // 1, 2 is printed
 console.log(rest)          // [3, 4, 5] is printed
 //Thanks to the assignment, the variables first and second will receive the first two integers of the 
 //array as their values. The remaining integers are "collected" into an array of their own which is then assigned to the variable rest.
-//----------------------------------------------------------------------
+//-------------------------------------------------------------------------------
 
+//Object literals - list properties within the braces
+const object1 = {
+  name: 'Arto Hellas',
+  age: 35,
+  education: 'PhD',
+}
+
+const object2 = {
+  name: 'Full Stack web application development',
+  level: 'intermediate studies',
+  size: 5,
+}
+
+const object3 = {
+  name: {
+    first: 'Dan',
+    last: 'Abramov',
+  },
+  grades: [2, 3, 5, 3],
+  department: 'Stanford University',
+}
+
+console.log(object1.name)         // Arto Hellas is printed
+const fieldName = 'age' 
+console.log(object1[fieldName])    // 35 is printed
+
+//add proeprties 
+object1.address = 'Helsinki'
+object1['secret number'] = 12341
+//-------------------------------------------------------------------------------
+
+//Functions - complete arrow function
+
+const sum = (p1, p2) => {
+  console.log(p1)
+  console.log(p2)
+  return p1 + p2
+}
+
+const result = sum(1, 5)
+console.log(result)
+
+//rewriting the function in one lline - good for arrays
+//const square = p => p * p
+const p = [1, 2, 3]
+const pSquared = p.map(p => p * p) // pSquared is now [1, 4, 9]
